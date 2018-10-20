@@ -1,0 +1,33 @@
+div {
+    border:1px solid black;
+    box-sizing: border-box;
+}
+#section {
+    position:relative;
+}
+#main {
+    position: relative;
+    width: 70%;
+    height: 300px;
+    float:left;
+}
+#main img {
+    width:100%;
+    height:100%;
+}
+#aside {
+    width:15%;
+    position:relative;
+    float:right;
+}
+.history_list {
+    width: 100%;
+    position:relative;
+}
+.history_list > div {
+    height: 150px;
+    margin-bottom: 10px;
+}
+.history_list  img {
+    width:100%;
+}
