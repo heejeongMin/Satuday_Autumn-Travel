@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+    <!--화면 제일 상단으로 이동하는 제이쿼리-->
+    <script>
+      /*스크롤 업 앤 다운*/
+      $(document).ready(function(){
+        $(function () {
+          $('.homeup').click(function () {
+            $('body,html').animate({
+              scrollTop: 0
+            }, 800);
+            return false;
+          });
+      var scrollHeight = $(document).height();
+          $('.homedown').click(function () {
+            $('body,html').animate({
+              scrollTop: scrollHeight
+            }, 800);
+            return false;
+          });
+        });
+
+      });
+    </script>
+
+
+    <style>
+
+      .ContainerA{
+        width:1200px;
+        height:290px;
+        margin: auto;
+
+      }
+
+      .ContentsA{
+        width:461px;
+        height:290px;
+        float:left;
+        margin-left:15px;
+      }
+      .ContentsA p{
+        font-size:16px;
+        font-weight: solid;
+      }
+
+        .swiper-container {
+        width: 621px;
+        height: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        float:left;
+      }
+      .swiper-slide {
+        width: 610px;
+        height: 280px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .ScrollDisplay{
+        width:1200px;
+        height:50px;
+        float:right;
+        margin: auto;
+      }
+
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div data-obj-type="group" data-obj-id="8MXON" class="" style="position: absolute; left: 29px; top: -6.50926px; width: 1138px; height: 59px;"><div data-obj-id="7k6SI" data-obj-type="element" data-text-editable="true" class="" style="position: absolute; top: 6.50926px; left: 0px; width: 1138px; height: 46px;"><div data-text-content="true" style="background-color: rgb(224, 224, 224);"></div></div><div data-obj-id="Xq0Hf" data-obj-type="element" data-text-editable="true" class="" style="position: absolute; top: 16.0069px; left: 1059px; width: 60px; height: 26px;" data-link-to="page:3Nh7M"><div data-text-content="true" style="font-size: 12px; color: rgb(64, 64, 64); text-align: center; line-height: 2em; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(224, 224, 224);" class="">English</div></div><div data-obj-type="group" data-obj-id="tmhbH" class="" style="position: absolute; left: 7.9977px; top: 0px; width: 110.002px; height: 59px;" data-link-to="page:SF6CD"><div data-obj-id="UmXwM" data-obj-type="icon" class="" style="position: absolute; top: 0px; left: 0px; width: 42px; height: 58px;"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" data-svg-content="true" fill="rgb(22, 160, 133)"><path d="M41 22h-3v-8c0-2.21-1.79-4-4-4h-8V7c0-2.76-2.24-5-5-5s-5 2.24-5 5v3H8c-2.21 0-3.98 1.79-3.98 4l-.01 7.6H7c2.98 0 5.4 2.42 5.4 5.4S9.98 32.4 7 32.4H4.01L4 40c0 2.21 1.79 4 4 4h7.6v-3c0-2.98 2.42-5.4 5.4-5.4 2.98 0 5.4 2.42 5.4 5.4v3H34c2.21 0 4-1.79 4-4v-8h3c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></div><div data-obj-id="EDuQR" data-obj-type="element" data-text-editable="true" class="" style="position: absolute; top: 22.5116px; left: 24.0023px; width: 86px; height: 20px;"><div data-text-content="true" style="font-size: 16px; font-weight: bold; font-family: &quot;Comic Sans MS&quot;;" class=""><span style="color: rgb(255, 255, 255);">S</span>aturday</div></div></div>
+      <div style="width:100%; height:60px; background-color:rgb(224,224,224);">
+      </div>
+      </div>
+      <div>
+
+      </div>
+    </header>
+    <section>
+    <div style="font-weight: bold; font-size: 36px; text-align: center; margin-top:60px; margin-bottom:10px;">가봐야할 곳 Best 5</div>
+
+    <div class="ContainerA">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/a1.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/a2.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/a3.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/a4.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/a5.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/a6.jpg" style="width:100%; height:100%"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="ContentsA">
+        <p>현재 관광 명소로 이름이 알려진 역이지만 이역의 개통 목적은 탄광촌 주민들의 여객 및 석탄수송이었다. 1980년대말 광산이 폐광되기 시작하면서 사람들은 떠나가기 시작했고 폐역을 검토하였다. </p>
+        <p>하지만 드라마 모래시계의 영향으로 사람들이 정동진을 방문하기 시작하면서 이용객은 급증하였고, 전국유일의 해돋이를 볼 수 있는 역이라는 사실이 알려지면서 이용객이 급증하였다.</p>
+        <p>최근 평창올림픽이 열리면서 인근지역에 ktx가 개통되면서 이용객이 급증하게된 이유가 되었다. </p>
+      </div>
+
+    </div>
+
+    <div class="ContainerA">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/b1.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/b2.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/b3.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/b4.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/b5.jpg" style="width:100%; height:100%"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="ContentsA">
+        <p>강원도 강릉시 구정면 현천길 25에 위치해 있으며 커피제조공장, 커피숍, 레스토랑을 겸한 커피체험 종합문화공간이다.</p>
+        <p>2002년에 건립되어 커피제조 판매로 시작하였으며 식당은 2005년 7월에 개업하였다. 커피가 잘 자라는 비옥한 보랏빛 땅 이라는 뜻이 취지에 맞아 상호를 붙였다.</p>
+        <p>하얀 건물 외벽과 전면에는 데크가 있고 나지막한 돌담이 있어 목가적인 느낌을 준다. 안으로 들어서면 10여 미터 높이의 목재 트러스 천장에 원두커피 자루와 30kg용량의 거대한 커피로스팅 설비, 커피추출기구가 설치되어 있어 공장 같은 느낌이지만 커피BAR가 자리잡고 있어 커피전문점이라는 느낌을 준다.</p>
+
+      </div>
+
+    </div>
+
+    <div class="ContainerA">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/c1.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/c2.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/c3.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/c4.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/c5.jpg" style="width:100%; height:100%"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="ContentsA">
+        <p>홍길동전의 저자 허균의 부친 허엽이 한때 이 마을에 살았었는데 그의 호 초당에서 따온 마을 이름이라는 설이 있다.</p>
+        <p>허엽이 이 마을에서 처음 바닷물로 두부를 만들고 그 전통이 지금까지 이어지고 있다는 것이다.</p>
+        <p>허나 조선의 사대부가 두부 만드는 '잡일'을 하였을 것이라는 발상에 무리가 있지 않은가? 주민들의 말에 의하면 한국 전쟁 중 두부를 쑤어 시장에 내다파는 집에 한두 집 생겼는데, 두부를 만들어 대야 이고 강릉 시내에 나가 팔았던 것이 차츰 이름을 얻어 지금의 유명세를 갖게 되었다는 것이 맞을것이다.</p>
+      </div>
+    </div>
+
+    <div class="ContainerA">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/d1.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/d2.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/d3.jpg" style="width:100%; height:100%"></div>
+          <div class="swiper-slide"><img src="img/d4.jpg" style="width:100%; height:100%"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="ContentsA">
+        <p>강릉시 성남동 일대에 위치한 중앙시장은 1980년 1월 18일부로 등록개설된 강릉시내 재래식 공설시장으로서 동쪽으로는 동부시작, 서쪽으로는 서부시장 다음으로 세번째 개장되어 핵심 유통시장 기능을 100% 발휘하여 영업중에 있다.</p>
+        <p>종합 공설시장상가, 축협, 농협마트, 개별상가, 점포, 유흥점등이 밀집해있고 골목길, 도로변에 또한 노점상들이 위치해 있어서 사계절 지역특산물이 거래됨으로써 강릉도심 내 주민 뿐 아니라 동해안 농어촌지역 주민도 강릉 중앙시장을 많이 찾는다.</p>
+        <p>그리고 1년에 한번 강릉 단오제 행사가 중앙시장 주변 남대천 일대 단오장에서 약 1주일정도 거행된다고 하는데 전국각지에서 품목들이 들어와서 거래가된다고 한다.</p>
+      </div>
+    </div>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+    <div class="Huk">
+    </div>
+
+    <input type="image" src="img/ScrollUp.PNG" class="homeup"/ style="position:fixed; right:5%; bottom:4%">
+
+
+  </section>
+  </body>
+</html>
