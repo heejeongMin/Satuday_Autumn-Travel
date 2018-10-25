@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>강화도</title>
-    
+    <!--css 차례대로 FontAwesome, Swiper, intro (상단 고정 바), history -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/heejeong.css">
-    
-    
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/history.css">
+
+    <!--script 차례대로 jquery, Swiper, history -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/regionPlace.js"></script>
     <script src="js/history.js"></script>
 </head>
 
 <body>
     <header class="headerbar">
+        <!--상단 고정 바-->
         <div>
             <a href="#">
                 <i class="fas fa-puzzle-piece"></i>
                 <p><span>S</span>atuday</p>
             </a>
         </div>
-        <button>English</button>
+        <button>English</button>    
+        <!--드롭다운 메뉴-->
         <div id="headerdropdown">
             <button><i class="fas fa-ellipsis-h"></i></button>
             <div class="headerbar">
@@ -36,18 +35,20 @@
                         <button id="headerClose"><i class="fas fa-angle-up"></i></button>
                     </div>
                     <ul>
-                        <!--Todo: a 태그에 본인 페이지 연결하기-->
                         <li><a href="place.html">#가봐야할 곳 Best 5</a></li>
                         <li><a href="history.html">#역사</a></li>
-                        <li><a href="#">#먹거리 Best 3</a></li>
-                        <li><a href="#">#찾아가기</a></li>
+                        <li><a href="food.html">#먹거리 Best 3</a></li>
+                        <li><a href="search.html">#찾아가기</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    
+    <!--Content 시작-->
     <main id="historyMain">
         <h2>역사</h2>
+        <!--Zoomin으로 보이는 건-->
         <article>
             <img src="img/history1.jpg" alt="byeonginyangyo" id="picture">
             <div class="story">
@@ -55,6 +56,7 @@
                 <p id="text">1866년(고종 3) 흥선대원군의 천주교도 학살 ·탄압에 대항하여 프랑스함대가 강화도에 침범한 사건.</p>
             </div>
         </article>
+        <!--Zoomout으로 화면 우측에 건들-->
         <aside>
             <ul>
                 <li>
@@ -94,8 +96,5 @@
             </ul>
         </aside>
     </main>
-
-
-
 </body>
 </html>
