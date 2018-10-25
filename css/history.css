@@ -1,0 +1,30 @@
+/*place, history, food, search 공통==========*/
+main {position: relative; top: 110px; left: 50%; transform: translate(-50%); width: 90vw; min-width: 580px;}
+main>h2{position: absolute; top:0; left: 0; text-align: center; width: 90vw;}
+
+
+
+/*history 전용 style 시작====================*/
+/*Zoomin되는 큰 이미지*/
+#historyMain>article {float: left; width: 70%; height: auto; margin: 50px 0; padding: 10px; box-sizing: border-box; font-family: "Gamja Flower", cursive;}
+#historyMain>article h3 {color: rgb(22, 160, 133); font-size: 2em; margin: 6px 0;}
+#historyMain>article p{margin: 6px 0; font-size: 1.3em;}
+#historyMain>article img{width: 100%; border: 5px double black; box-sizing: border-box; box-shadow: 3px 3px grey;}
+
+/*Zoomout되어 있는 썸네일 이미지*/
+#historyMain aside {float: right; width: 30%; height: auto; margin: 50px 0; padding: 10px; box-sizing: border-box;}
+#historyMain aside ul {overflow-y: hidden;}
+#historyMain aside ul li {position: relative; margin: 10px 0; overflow: hidden;}
+
+    /*---썸네일 이미지에 hover하게 되면 나타나게될 플러스 아이콘과, 타이틀 스타일 숨기기 */
+#historyMain aside ul li>div.over{position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5); cursor: pointer; transition: 0.3s; visibility: hidden;}
+    /*----썸네일일때는 제목과 설명은 숨기기*/
+#historyMain aside ul li div.story {display: none;}
+
+#historyMain aside ul li>div i{ position: absolute; top: 30%; left: 50%; transform: translate(-50%); color: white; font-size: 2.5em;}
+#historyMain aside ul li>div p {position: absolute; bottom: -50px; background: black; width: 100%; height: 50px; color: white; padding: 6px 10px;  box-sizing: border-box; font-weight: bold; border-top: 3px groove; transition: 0.4s;}
+#historyMain aside ul li img{width: 100%;}
+
+/*썸네일 이미지에 hover하게 되면 나타나게될 플러스 아이콘과, 타이틀 스타일 보이고, 타이틀은 bottom을 0으로 설정해 밑에서 올라오는 것처럼 설정*/
+#historyMain aside ul li:hover div.over{visibility: visible;}
+#historyMain aside ul li:hover div.over p{bottom:0;}
