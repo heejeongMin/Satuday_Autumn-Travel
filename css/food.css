@@ -1,0 +1,27 @@
+/*place, history, food, search 공통==========*/
+main {position: relative; top: 110px; left: 50%; transform: translate(-50%); width: 90vw; min-width: 580px;}
+main>h2{position: absolute; top:0; left: 0; text-align: center; width: 90vw;}
+
+
+/*history 전용 style 시작====================*/
+/*왼쪽 음식 이름 자동 돌아가는 리스트*/
+main #foodList {width: 25%; float: left; margin: 100px 0; height: 200px; overflow:hidden; background: rgba(22, 160, 133,0.3); border-radius: 30%;}
+main #foodList ul {}
+main #foodList ul li {text-align: center; color: grey; transition: 0.6s; margin: 10px 0 ; cursor: default;}
+main #foodList ul li:nth-child(2), 
+main #foodList ul li:nth-child(4){font-size: 1.3em; color: purple; font-weight: bold;}
+main #foodList ul li:nth-child(3){font-size: 2em; color: orange; font-weight: bold; background: rgb(22, 160, 133);}
+
+
+/*오른쪽 Best3 먹거리*/
+main #best3 {width: 75%; float: right; width: 75%; margin: 50px 0;}
+main #best3 ul {display: flex; position: relative;}
+main #best3 ul li {display: inline-block; position: relative; width: 30%; flex-grow: 3; margin-left: 10px; }
+main #best3 ul li div.over {width: 100%; position: absolute; top: 0; left: 50%; transform: translate(-50%); visibility: hidden; cursor: pointer;}
+main #best3 ul li div.over i {margin-top: 20%; color: lightgray; font-size: 2.5em; }
+main #best3 ul li img {width: 100%;}
+main #best3 ul li div.story {}
+main #best3 ul li div.story h3 {}
+main #best3 ul li div.story p{width: 100%; font-size: 0.7em; text-align: justify; box-sizing: border-box; padding: 10px; }
+main #best3 ul li:hover div.over {visibility: visible;}
+main #best3 ul img#popup {position: absolute; z-index:1; padding-left: 6px; box-sizing: border-box; width: 100%;}
