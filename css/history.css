@@ -1,0 +1,78 @@
+/*내용 부분 디자인 */
+#wrapper{
+    margin: 80px auto 0 auto;
+    width: 75%;
+    min-width: 992px;
+    padding: 10px;
+    overflow: hidden;
+}
+#wrapper h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*썸네일을 클릭했을때 나오는 화면 디자인 */
+#wrapper article{
+    float: left;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#wrapper > article h3 {color: rgb(22, 160, 133); font-size: 2em; margin: 6px 0;}
+#wrapper > article p{margin: 6px 0; font-size: 1.3em;}
+#wrapper > article img{width: 100%; border: 5px double black; max-height: 500px; box-sizing: border-box; box-shadow: 3px 3px grey;} /* 가로방향 세로방향으로 grey색만큼의 그림자 */
+
+/*썸네일 부분 디자인 */
+#wrapper > section{
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#wrapper > section ul{
+    overflow-y: hidden;
+}
+#wrapper > section ul li{
+    position: relative; 
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#wrapper > section ul li div.over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); 
+    cursor: pointer; 
+    transition: 0.3s; 
+    visibility: hidden;
+}
+#wrapper > section ul li div.story{
+    display: none;
+}
+
+#wrapper > section ul li div i{
+    position: absolute; 
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%); 
+    color: white; 
+    font-size: 2.5em;
+}
+#wrapper > section ul li div.over p{
+    position: absolute; 
+    bottom: -50px; 
+    background: black; 
+    width: 100%; 
+    height: 50px; 
+    color: white; 
+    padding: 6px 10px; 
+    box-sizing: border-box; 
+    font-weight: bold;
+    transition: 0.4s;
+}
+#wrapper > section ul li img{width: 100%; max-height: 250px;}
+
+/*썸네일에 마우스를 올려놓을때 디자인 */
+#wrapper section ul li:hover div.over{visibility: visible;} 
+#wrapper section ul li:hover div.over p{bottom:0;} 
