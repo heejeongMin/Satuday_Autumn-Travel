@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>먹거리</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/food.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <script src="js/jquery.vticker-min.js"></script> <!--자동으로 리스트가 돌아가도록 할때 필요한 플러그인-->
+    <script src="js/food.js"></script>
+    
+</head>
+<body>
+        <header class="headerbar">
+                <!--상단 고정 바-->
+                <div>
+                    <a href="#">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <p><span>S</span>atuday</p>
+                    </a>
+                </div>
+                <button>English</button>    
+                <!--드롭다운 메뉴-->
+                <div id="headerdropdown" style="text-align: center;">
+                    <button><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="headerbar">
+                        <nav>
+                            <div>
+                                <button id="home"><a href="#"><i class="fas fa-home"></i></a></button>
+                                <button id="headerClose"><i class="fas fa-angle-up"></i></button>
+                            </div>
+                            <ul>
+                                <li><a href="place.html">#가봐야할 곳 Best 5</a></li>
+                                <li><a href="history.html">#역사</a></li>
+                                <li><a href="food.html">#먹거리 Best 3</a></li>
+                                <li><a href="search.html">#찾아가기</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+    <!-- 내용이 나오는 부분-->
+    <div id="wrapper">
+        <h1>먹거리 Best 3</h1>
+        <section class="food-content">
+            <!-- 자동으로 돌아가는 리스트-->
+            <div class="food-list rolling-list" >
+                <ul>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                    <li><a href="#">리스트 항목</a></li>
+                </ul>
+            </div>
+            <!-- 음식-->
+            <div class="food">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="img/거궁1.PNG" class="swiper-image"></div>
+                            <div class="swiper-slide"><img src="img/거궁2.PNG" class="swiper-image"></div>
+                            <div class="swiper-slide"><img src="img/거궁3.jpg" class="swiper-image"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="food-intro">
+                        <p class="food-intro-title">이천 쌀밥 한정식 거궁</p>
+                        <p>한정식 전문 음식점인 거궁은 맛 좋기로 유명한 이천 쌀과 맛깔나는 
+                                반찬들로 식사 메뉴를 구성했다. 
+                                거궁 주변의 논에서 재배돼 도정작업을 거친 이천 쌀로 밥을 지어 최상의 밥맛을 
+                                느낄 수 있는 것은 물론, 
+                                반찬 역시 신선한 농수산물을 매일같이 공수해 재료로 사용하기 때문에 몸에도 좋고, 
+                                맛도 좋은 한정식을 즐길 수 있다.</p>
+                    </div>
+            </div>
+            <!-- 음식-->
+            <div class="food">
+                    <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="img/오동추야1.PNG" class="swiper-image"></div>
+                                <div class="swiper-slide"><img src="img/오동추야2.PNG" class="swiper-image"></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="food-intro">
+                        <p class="food-intro-title">20년 내공의 숯불 돼지갈비, 이천 맛집 오동추야</p>
+                        <p>수준급 숯불갈비를 내놓기로 입소문이 난 까닭에 여러 사람들이 많이 
+                                오는 단골집으로 알려졌다.
+                                특히 여름에는 줄을 서서 먹을 만큼 유명한 ‘오동추야’ 
+                                냉면은 손반죽으로 특색있는 맛과 식감을 자랑한다.</p>
+                    </div>
+            </div>
+            <!-- 음식-->
+            <div class="food">
+                    <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="img/청목1.jpg" class="swiper-image"></div>
+                                <div class="swiper-slide"><img src="img/청목2.jpg" class="swiper-image"></div>
+                                <div class="swiper-slide"><img src="img/청목3.PNG" class="swiper-image"></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="food-intro">
+                        <p class="food-intro-title">기름진 흰 쌀밥에 27가지 반찬, 청목 한정식</p>
+                        <p>도자기와 쌀로 유명한 지역이다보니 정말 내로라하는 쌀밥집이 상당히 여러 곳에 분포하고 있다. 
+                                그중 이천쌀밥집의 대명사격인 청목 한정식은 단연 독보적인 유명세를 떨치고 있다. 
+                                전·현직 유명 인사는 물론 기업인들이 외국에서 온 귀한 손님을 대접할 때 망설임없이 소개하는 곳이 이곳이다.</p>
+                    </div>
+            </div>
+        </section>
+    </div>
+
+    <!--#headerdropdown .headerbar"가 slideDown된 상태이기 때문에 웹브라우저에 문서가 로드되자마자 slideUp해줌-->
+    <script>
+        $(function(){
+            $("#headerdropdown .headerbar").slideUp(1);
+        });
+    </script>
+</body>
+</html>
