@@ -1,0 +1,91 @@
+
+/* 음식 사진 관련 디자인 */
+.food-image{
+    position: relative;
+    height: 280px;
+}
+.food-image img{
+    width: 100%;
+    height: 100%;
+}
+.food-image i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) scale(2.5);
+    color: #eeeeee;
+}
+.food-image i:hover{
+    cursor: pointer;
+}
+
+/*내용 부분 디자인 */
+#wrapper{
+    margin: 80px auto 0 auto;
+    width: 75%;
+    min-width: 992px;
+    padding: 10px;
+}
+#wrapper h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.food-content{
+    position: relative;
+    overflow: hidden;
+}
+.food-content .picture{ /*음식 클릭시 나오는 큰 음식 사진 디자인 */
+    position: absolute;
+    right: 10px; top: 10px;
+    z-index: 2;
+    width: 750px; display: none;
+}
+.food-content .picture:hover{
+    cursor: pointer;
+}
+.picture img{
+    width: 100%;
+}
+
+
+#wrapper .food-list, #wrapper .food{
+    width: 23%;
+    padding: 1%;
+    float: left;
+}
+.food-list ul{
+    padding: 10px;
+}
+.food-list ul li{
+    margin-bottom: 17px;
+    text-align: center;
+}
+.food-list ul li a{
+    transition: 0.6s;
+}
+.food-list ul li:first-child a, .food-list ul li:nth-child(5) a{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.food-list ul li:nth-child(2) a, .food-list ul li:nth-child(4) a{
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: darkorchid;
+}
+.food-list ul li:nth-child(3) a{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: coral;
+}
+
+/* 음식에 대한 설명 디자인 */
+.food-intro{
+    margin-top: 10px;
+}
+.food-intro .food-intro-title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
