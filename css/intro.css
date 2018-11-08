@@ -32,6 +32,7 @@ img {border: 0}
     left: 50%;
     transform: translate(-50%);        
 }
+
 header>div {width: 120px;}
 header>div a {display:block; width: 100%;}
 header>div i {font-size: 40px; color: rgb(22, 160, 133); padding: 5px 10px;}
@@ -46,7 +47,6 @@ main>div {width: 100vw; text-align: center;}
 main>div>a {display: block; width: 100%;}
 main>div i {font-size: 70px; color: rgb(22, 160, 133); text-shadow: 2px 2px black;  cursor: pointer; margin: 20px 0;}
 
-
 main>nav {width: 100vw;}
 main>nav>ul {width: 100vw; display: flex; justify-content: center;}
 nav>ul>li {padding: 6px 0; border-radius: 10px; display: inline-block; margin: 0 10px;}
@@ -58,23 +58,32 @@ nav>ul>li>a{display: block; text-align: center; width: 100%; font-weight: bold; 
 
 
 
+/*intro 페이지를 제외한 place, history, food, search의 공통 스타일 : 상단바 밑에 버튼 및 드롭다운*/
+#headerdropdown {position: absolute; width: 90vw; top: 50px; left: 50%; transform: translate(-50%);}
+#headerdropdown>button{position: absolute; left: 50%; transform: translate(-50%);}
+#headerdropdown>.headerbar {width: 90vw;  height: 50px; left: 50%; position: relative; display: none;}
+#headerdropdown>.headerbar nav{position: absolute; top: 6px; left: 50%; transform: translate(-50%); width: 550px;}
+#headerdropdown>.headerbar nav div{width: 100px; float: left;}
+#headerdropdown>.headerbar nav div i{color: black; font-size: 25px;}
+#headerdropdown>.headerbar nav ul {float: right; width: 440px; margin-top: 3px;}
+#headerdropdown>.headerbar nav ul li {display: inline-flex; width: 0.1%; margin: 0;}
+#headerdropdown>.headerbar nav ul li a{font-size: 12px;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*media query =============================================================*/
+@media screen and (max-width: 768px){
+	.headerbar {min-width: auto; height: 40px;}
+	header>div i {font-size: 1.8em; padding: 3px 10px;}
+	header>div p{font-size: 15px; top: 12px; left: 26px;}
+	
+	main {top: 13%;}
+	main>div i {font-size: 3.5em;}
+	main>nav>ul {display: block;}
+	nav>ul>li:nth-child(1),
+	nav>ul>li:nth-child(2),
+	nav>ul>li:nth-child(3),
+	nav>ul>li:nth-child(4) {width: 90vw; padding: 15px -0; display: block; margin: 30px auto;}
+	
+}
 
