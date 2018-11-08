@@ -73,17 +73,29 @@ nav>ul>li>a{display: block; text-align: center; width: 100%; font-weight: bold; 
 
 /*media query =============================================================*/
 @media screen and (max-width: 768px){
+	/*모바일 : 상단 고정 바*/
 	.headerbar {min-width: auto; height: 40px;}
 	header>div i {font-size: 1.8em; padding: 3px 10px;}
 	header>div p{font-size: 15px; top: 12px; left: 26px;}
 	
+	/*모바일 : 화면 중간 navigation 버튼*/
 	main {top: 13%;}
 	main>div i {font-size: 3.5em;}
 	main>nav>ul {display: block;}
 	nav>ul>li:nth-child(1),
 	nav>ul>li:nth-child(2),
 	nav>ul>li:nth-child(3),
-	nav>ul>li:nth-child(4) {width: 90vw; padding: 15px -0; display: block; margin: 30px auto;}
+	nav>ul>li:nth-child(4) {width: 90vw; padding: 15px -0; display: block; margin: 30px auto;}	
+	
+	/*모바일: 상단바 밑에 버튼 및 드롭다운*/
+	#headerdropdown {top: 38px;}
+	#headerdropdown>.headerbar {height: 100vh;}
+	#headerdropdown>.headerbar nav{width: 100%;}
+	#headerdropdown>.headerbar nav div{width: 100%; text-align: center; margin-top: 10%;}
+	#headerdropdown>.headerbar nav div i{font-size: 2.5em;}
+	#headerdropdown>.headerbar nav ul {width: 100%;}
+	#headerdropdown>.headerbar nav ul li {display: block; width: 80%; margin: 10% auto;}
+	#headerdropdown>.headerbar nav ul li a{font-size: 18px;}
 	
 }
 
