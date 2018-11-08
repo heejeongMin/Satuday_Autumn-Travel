@@ -3,7 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>강화도</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<meta name="keywords" content="HTML,CSS,JavaScript,jQuery,trip">
+	<meta name="description" content="2018 Recommeded travel location in South Korea">
+  	<meta name="author" content="Heejeong Min, Kiwon Im, Changho Kim, Keunhyung Park">
+	
+    <title>강화도 - 가봐야할 곳</title>
     <!--sytle 차례대로 FontAwesome, Swiper, intro (상단 고정 바, header dropdown), place-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
@@ -17,6 +23,7 @@
 </head>
 
 <body>
+    <!--place.html, history.html, food.html, search.html 공통-->
     <header class="headerbar">
         <!--상단 고정 바-->
         <div>
@@ -47,8 +54,8 @@
     </header>
     
     <!--Content 시작-->
-    <main class="kanghwaMain">
-        <h2>#가봐야할 곳 Best 5</h2>
+    <main id="kanghwado">
+        <h1>가봐야할 곳 Best 5</h1>
         <!--section>article*5>div[class="locationPics"]+div[class="locationDetail"]-->
         <section>
             <article>
@@ -60,7 +67,8 @@
                             <div class="swiper-slide"><img src="img/jundeungsa1.jpg" alt="jundeungsa1"></div>
                             <div class="swiper-slide"><img src="img/jundeungsa2.jpg" alt="jundeungsa2"></div>
                         </div>
-                        <div class="swiper-button-next">
+                        
+						<div class="swiper-button-next">
                             <i class="fas fa-caret-right"></i>
                         </div>
                         <div class="swiper-button-prev">
