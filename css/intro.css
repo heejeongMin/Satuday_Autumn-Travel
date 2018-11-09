@@ -11,6 +11,7 @@ img {border: 0}
 .bg {
     background: url('../img/kanghwadoMain.jpg') no-repeat;
     height: 100vh;
+	min-height: 500px;
     background-position: center;
     background-size: cover;
     z-index: -1;
@@ -85,7 +86,7 @@ nav>ul>li>a{display: block; text-align: center; width: 100%; font-weight: bold; 
 	nav>ul>li:nth-child(1),
 	nav>ul>li:nth-child(2),
 	nav>ul>li:nth-child(3),
-	nav>ul>li:nth-child(4) {width: 90vw; padding: 15px -0; display: block; margin: 30px auto;}	
+	nav>ul>li:nth-child(4) {width: 90vw; padding: 15px -0; display: block; margin: 5% auto;}	
 	
 	/*모바일: 상단바 밑에 버튼 및 드롭다운*/
 	#headerdropdown {top: 38px;}
