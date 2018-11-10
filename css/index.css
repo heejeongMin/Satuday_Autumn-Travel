@@ -8,9 +8,9 @@ body{min-width: 580px;}
 
 /*index 전용 style 시작 ====================================================================*/
 /*레이아웃*/
-#columnBox {width: 100%; height: 85%; box-sizing: border-box; position:absolute; top: 100px; overflow: hidden;}
-#columnBox>section.column {	box-sizing: border-box; float: left; width: 33.33%; height: 100%; padding: 10px; }
-#columnBox>section.column>figure {height: 50%; position: relative; cursor: pointer; overflow: hidden; margin-bottom: 10px;}
+#columnBox {width: 100%; height: 85%; box-sizing: border-box; position:absolute; top: 100px; overflow: hidden; margin-bottom: 30px;}
+#columnBox>section.column {box-sizing: border-box; float: left; width: 33.33%; height: 100%; padding: 10px; }
+#columnBox>section.column>figure {height: 50%; position: relative; overflow: hidden; margin-bottom: 10px;}
 #columnBox>section.column>figure.fig3 {height: 120%;}
 #columnBox>section.column>figure.fig4 {height: 20%;}
 #columnBox>section.column>figure.fig5 {height: 80%;}
@@ -23,7 +23,13 @@ figure figcaption{
 	color: #ffffff; font-weight: bold; font-size: 1.3em; opacity: 0; 
 	transition: 1s; transition-delay: 0.2s; background: #000;
 }
+
 figure:hover figcaption{opacity: 1;}
+figure figcaption span {color: rgb(22, 160, 133); text-shadow: 1px 0.5px white; display: inline-block; transition: 1s; font-weight: bold; animation: scaleUp 1.4s infinite;}	
+@keyframes scaleUp {	
+	0% {transform: scale(0.7);}	
+	100% {transform: scale(1.2);}	
+}
 
 
 
@@ -42,10 +48,7 @@ figure.fig1:hover::before{animation: shine .75s;}
 }
 
 /*fig2: 이름-------------------------------------------------------------------------------------------------*/
-figure.fig2 img{
-    /*object-fit, obejct-position은 사진에 맞게 조절하시고, 설정 안하시면 라인 16에 있는 default로 적용됩니다.*/
-    object-fit: cover;
-}
+figure.fig2 img {}
 figure.fig2::before {
 	position: absolute;
 	top: 50%;
@@ -57,7 +60,6 @@ figure.fig2::before {
 	height: 0;
 	background: rgba(255,255,255,.2);
 	border-radius: 100%;
-	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	opacity: 0;
 }
