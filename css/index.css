@@ -9,7 +9,7 @@ body{min-width: 580px;}
 /*index 전용 style 시작 ====================================================================*/
 /*레이아웃*/
 #columnBox {width: 100%; height: 85%; box-sizing: border-box; position:absolute; top: 100px; overflow: hidden; margin-bottom: 30px;}
-#columnBox>section.column {	box-sizing: border-box; float: left; width: 33.33%; height: 100%; padding: 10px; }
+#columnBox>section.column {box-sizing: border-box; float: left; width: 33.33%; height: 100%; padding: 10px; }
 #columnBox>section.column>figure {height: 50%; position: relative; overflow: hidden; margin-bottom: 10px;}
 #columnBox>section.column>figure.fig3 {height: 120%;}
 #columnBox>section.column>figure.fig4 {height: 20%;}
@@ -23,12 +23,15 @@ figure figcaption{
 	color: #ffffff; font-weight: bold; font-size: 1.3em; opacity: 0; 
 	transition: 1s; transition-delay: 0.2s; background: #000;
 }
+
 figure:hover figcaption{opacity: 1;}
-figure figcaption span {color: rgb(22, 160, 133); text-shadow: 1px 0.5px white; display: inline-block; transition: 1s; font-weight: bold; animation: scaleUp 1.4s infinite;}
-@keyframes scaleUp {
-	0% {transform: scale(0.7);}
-	100% {transform: scale(1.2);}
+figure figcaption span {color: rgb(22, 160, 133); text-shadow: 1px 0.5px white; display: inline-block; transition: 1s; font-weight: bold; animation: scaleUp 1.4s infinite;}	
+@keyframes scaleUp {	
+	0% {transform: scale(0.7);}	
+	100% {transform: scale(1.2);}	
 }
+
+
 
 
 /*개인별 사진 및 효과*/
@@ -45,18 +48,38 @@ figure.fig1:hover::before{animation: shine .75s;}
 }
 
 /*fig2: 이름-------------------------------------------------------------------------------------------------*/
-figure.fig2 img{
-	/*object-fit, obejct-position은 사진에 맞게 조절하시고, 설정 안하시면 라인 16에 있는 default로 적용됩니다.*/
-}
+figure.fig2 img {}
 figure.fig2::before {
-	/*가상 선택자에 원하시는 hover 스타일을 넣으시면됩니다. 혹시 참조가 필요하다면, 
-	https://codepen.io/nxworld/pen/ZYNOBZ 에 가시면 여러가지가 있으니 코드를 참조하시면되요. 저도 여기서 shien이라는 걸 참조했습니다. codepen에서 다른 분들이 한것 보다 이해하기 쉬웠습니다. 아마도.. 다른 분들은 scss랑 less를 쓰셔서 저한테 조금 어려웠던거 같습니다. 원하신다면 codepen 사이트에서 hover로 검색하시면 여러가지가 있습니다. 다음 프로젝트때에는 css말고 less나 sass로 해봐요!*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
 }
 figure.fig2:hover::before{
 	/*keyframe에 원하는 css3 변형효과를 주고 사용. 애니메이션 이름은 temp에서 원하시는 이름으로 변경하시고, 초도 변경 가능*/
-	animation: temp .75s;
+	animation: circle .75s;
 }
-@keyframes temp {/*원하는 애니메이션 설정*/}
+@keyframes circle {
+    0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
 
 /*혹시 글자에 다른 모션을 주고 싶으시면, 위에 line 17~34번을 가져와서 본인것에만 적용되게 해서 변형해주시면 됩니다. */
 
@@ -118,9 +141,3 @@ figure.fig5:hover::before{
 	
 	figure figcaption{font-size: 1em; padding: 5px 0;}
 }
-
-
-
-
-
-
