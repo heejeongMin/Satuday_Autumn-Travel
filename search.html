@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <link rel="stylesheet" href="css/search.css">
+
+</head>
+<body>
+<header>
+    <div>
+        <a href="intro.html">
+            <i class="fas fa-puzzle-piece"></i>
+            <p><span>S</span>atuday</p>
+        </a>
+    </div>
+    <button>English</button>
+</header>
+<!------------------- header ------------------------>
+<div id="header" style="margin-bottom:50px;">
+    <div class="nav-bar">
+
+    </div>
+    <div class="index">
+        <a href="intro.html"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+    </div>
+    <h1>찾아가기</h1>
+</div>
+
+<div id="googleMap"></div>
+
+<div id="explain">
+    <input id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked>
+    <input id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios">
+    <input id="panel-3-ctrl" class="panel-radios" type="radio" name="tab-radios">
+
+    <!-- TABS LIST -->
+    <ul id="tabs-list">
+        <!-- MENU TOGGLE -->
+        <li id="li-for-panel-1">
+            <label class="panel-label" for="panel-1-ctrl">Tab1</label>
+        </li>
+        <li id="li-for-panel-2">
+            <label class="panel-label" for="panel-2-ctrl">Tab2</label>
+        </li>
+        <li id="li-for-panel-3">
+            <label class="panel-label" for="panel-3-ctrl">Tab3</label>
+        </li>
+    </ul>
+
+    <!-- THE PANELS -->
+    <article id="panels">
+        <div class="container">
+            <section id="panel-1">
+                <main>
+                    <p>Content1</p>
+                </main>
+            </section>
+            <section id="panel-2">
+                <main>
+                    <p>Content2</p>
+                </main>
+            </section>
+            <section id="panel-3">
+                <main>
+                    <p>Content3</p>
+                </main>
+            </section>
+        </div>
+    </article>
+</div>
+
+<script type="text/javascript" src="js/history.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlgkfgF6scNmTg-9icvcDZD15fLyjMh5g&callback=initialize"></script>
+
+</body>
+</html>
