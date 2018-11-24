@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 모든 페이지 공통사항-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jQuery,trip">
+    <meta name="description" content="2018 Recommeded travel location in South Korea">
+    <meta name="author" content="Heejeong Min, Kiwon Im, Changho Kim, Keunhyung Park">
+
+    <!-- 해당 페이지 이름-->
+    <title>가봐야할 곳</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> <!--폰트어썸-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css"> <!-- 스와이퍼-->
+    <link rel="stylesheet" href="css/intro.css"> <!--모든 페이지의 해더 드롭다운 스타일임으로 공통적으로 적용 -->
+    <link rel="stylesheet" href="css/place.css">  <!-- 해당 페이지의 스타일-->
+
+    
+    <!-- 제이쿼리-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 스와이퍼 플러그인 4.4.1버전 이용-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <!-- 해당 페이지의 동적인 효과를 줄 스크립트-->
+    <script src="js/place.js"></script>
+</head>
+<body>
+
+    <!-- 모든 페이지에 포함될 공통 headerbar-->
+    <header class="headerbar">
+                <!--상단 고정 바-->
+                <div>
+                    <a href="intro.html">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <p><span>S</span>atuday</p>
+                    </a>
+                </div>
+                <button>English</button>    
+                <!--드롭다운 메뉴-->
+                <div id="headerdropdown" style="text-align: center;">
+                    <button><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="headerbar">
+                        <nav>
+                            <div>
+                                <button id="home"><a href="intro.html"><i class="fas fa-home"></i></a></button>
+                                <button id="headerClose"><i class="fas fa-angle-up"></i></button>
+                            </div>
+                            <ul>
+                                <li><a href="place.html">#가봐야할 곳 Best 5</a></li>
+                                <li><a href="history.html">#역사</a></li>
+                                <li><a href="food.html">#먹거리 Best 3</a></li>
+                                <li><a href="search.html">#찾아가기</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+    </header>
+
+    <!-- 내용이 나오는 부분. id값은 wrapper로 적용.-->
+    <div id="wrapper">
+            <h1>가봐야할 곳 Best 5</h1>
+    
+            <!-- 하나의 section은 장소와 그 장소에 대한 설명을 포함-->
+            <!-- 이런 형태의 section을 5개 만들어줌.-->
+            <!-- 각 section의 class값은 순서대로 content1,content2,content3,content4,content5-->
+            <section class="content1">
+
+                    <!-- swiper-container부분은 그대로 복붙해서 사용.-->
+                    <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="img/사진이름" class="swiper-image"></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                    </div>
+                    <p class="introduce_place">
+                            <h2 class="place_title">장소이름</h2>
+                            <hr>
+                            <p>
+                                장소에 대한 설명.
+                            </p>
+                    </p>
+            </section>
+            <section class="content2">
+            </section>
+            <section class="content3">
+            </section>
+            <section class="content4">
+            </section>
+            <section class="content5">
+            </section>
+        </div>
+
+        <!--scroll down이 일어나 화면이 아래로 300px 이동하게 되면 위로 올라가는 아이콘-->
+        <footer>
+            <button><i class="fas fa-chevron-circle-up"></i></button>
+        </footer>
+
+        <!--#headerdropdown .headerbar"가 slideDown된 상태이기 때문에 웹브라우저에 문서가 로드되자마자 slideUp해줌-->
+        <script>
+            $(function(){
+                $("#headerdropdown .headerbar").slideUp(1);
+            });
+        </script>
+</body>
+</html>
